@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile"
+    android:background="@drawable/bg2">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:padding="15dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#18A0B1"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/proimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_profile"/>
+            <TextView
+                android:id="@+id/textfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="FULLNAME"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/proimage"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/proimage"
+                android:fontFamily="@font/bungee"
+                android:includeFontPadding="false"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="EMAIL"
+                android:layout_below="@id/textfullname"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/proimage"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/proimage"
+                android:fontFamily="@font/bungee"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bungee"
+                android:background="#00000000"/>
+
+    </LinearLayout>
+
+</ScrollView>

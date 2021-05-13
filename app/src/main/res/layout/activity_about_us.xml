@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="130dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/bungee"
+        android:text="ABOUT US"
+        android:layout_marginLeft="130dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="130dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Waste collection is just the start. Through investments, education and state-of-the-art technologies, we're collaborating with people and communities to contribute to a better environment."
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</ScrollView>

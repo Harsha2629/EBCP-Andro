@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PitValues"
+    android:background="#49274A"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pitnameview"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Compost Pit 1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tempdisplay"
+        android:layout_width="122dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="####"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/pitnameview" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="94dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="24dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="24dp"
+        android:text="Date/Time\nTemperature\nHumidity\nPressure\nAirflow\nOxygen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tempdisplay" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
